@@ -247,12 +247,10 @@ function renderProject(index) {
   } else {
     const p = projects[index];
     projectDisplay.innerHTML =
-      '<div class="project-media">' +
+      '<a class="project-media" href="project.html?slug=' + p.slug + '" aria-label="View project details">' +
         (p.video ? '<video class="project-video" src="' + p.video + '"' + (p.poster ? ' poster="' + p.poster + '"' : '') + ' muted loop playsinline preload="auto" data-start-at="' + (p.startAt || 0) + '"></video>' : '') +
-        '</div>' +
-        '<div class="project-overlay">' +
-        '<a class="view-project-btn" href="project.html?slug=' + p.slug + '">View Project</a>' +
-        '</div>';
+        '<span class="project-hint">Click to view project</span>' +
+        '</a>';
 
     const video = projectDisplay.querySelector('.project-video');
     if (video) {
