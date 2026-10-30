@@ -1,5 +1,5 @@
 /* ============================================
-   BLUE DOT MEDIA — PREMIERE PRO TIMELINE PORTFOLIO
+   BLU DOT MEDIA — PREMIERE PRO TIMELINE PORTFOLIO
    Playhead animation, project switching, interactions
    ============================================ */
 

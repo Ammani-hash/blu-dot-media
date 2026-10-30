@@ -1,5 +1,5 @@
 /* ============================================
-   BLUE DOT MEDIA — Project catalogue
+   BLU DOT MEDIA — Project catalogue
    Shared by the timeline and individual project pages
    ============================================ */
 

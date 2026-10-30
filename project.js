@@ -1,5 +1,5 @@
 /* ============================================
-   BLUE DOT MEDIA — Project Detail Page
+   BLU DOT MEDIA — Project Detail Page
    Reads ?slug=... and renders that project's
    entry from the shared `projects` catalogue.
    ============================================ */
@@ -10,14 +10,14 @@ function getSlug() {
 }
 
 function renderNotFound() {
-  document.title = 'Project not found — Blue Dot Media';
+  document.title = 'Project not found — Blu Dot Media';
   document.querySelector('.project-main').innerHTML =
     '<p class="project-not-found">Couldn’t find that project. ' +
     '<a href="index.html">Return to the timeline</a>.</p>';
 }
 
 function renderProject(project) {
-  document.title = project.title + ' — Blue Dot Media';
+  document.title = project.title + ' — Blu Dot Media';
 
   document.getElementById('headerTitle').textContent = project.title;
   document.getElementById('infoTitle').textContent = project.title;
