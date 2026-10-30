@@ -251,7 +251,6 @@ function renderProject(index) {
         (p.video ? '<video class="project-video" src="' + p.video + '"' + (p.poster ? ' poster="' + p.poster + '"' : '') + ' muted loop playsinline preload="auto" data-start-at="' + (p.startAt || 0) + '"></video>' : '') +
         '</div>' +
         '<div class="project-overlay">' +
-        (p.hideTitle ? '' : '<h1 class="project-name">' + p.title + '</h1>') +
         '<a class="view-project-btn" href="project.html?slug=' + p.slug + '">View Project</a>' +
         '</div>';
 
