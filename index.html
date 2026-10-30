@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blue Dot Media — Timeline</title>
+  <meta name="description" content="Blue Dot Media — a reel of our work, presented as a Premiere Pro editing timeline." />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='8' fill='%231a1a1a'/%3E%3Ccircle cx='24' cy='24' r='10' fill='%235fb6d4'/%3E%3C/svg%3E" />
+
+  <!-- Adobe Source Sans 3 + Source Code Pro (open-source Adobe fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600&family=Source+Sans+3:wght@300;400;500;600;700;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="base.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="brand.css" />
+</head>
+<body>
+  <a href="#monitor" class="skip-link">Skip to monitor</a>
+
+  <section class="intro intro--brand" id="intro">
+    <div class="intro-grain" aria-hidden="true"></div>
+
+    <div class="intro-brand-inner">
+      <span class="intro-brand-dot reveal" style="--reveal-delay: 0ms" aria-hidden="true"></span>
+      <h1 class="intro-brand-name reveal" style="--reveal-delay: 120ms">BLUE DOT MEDIA</h1>
+      <p class="intro-brand-role reveal" style="--reveal-delay: 220ms">Video Production &amp; Editing</p>
+    </div>
+  </section>
+
+  <main class="editor" id="timeline">
+    <!-- PROGRAM MONITOR PANEL -->
+    <section class="monitor-panel">
+      <div class="panel-tab-bar">
+        <div class="panel-tab active">Program Monitor</div>
+      </div>
+      <div class="monitor" id="monitor">
+        <div class="monitor-screen">
+          <div class="project-display" id="projectDisplay"></div>
+        </div>
+      </div>
+      <div class="monitor-controls">
+        <span class="monitor-timecode" id="timecode">00:00:00:00</span>
+        <div class="monitor-buttons">
+          <button class="ctrl-btn" id="stepBack" aria-label="Step back">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/></svg>
+          </button>
+          <button class="ctrl-btn ctrl-play" id="playPause" aria-label="Pause">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+          </button>
+          <button class="ctrl-btn" id="stepForward" aria-label="Step forward">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg>
+          </button>
+        </div>
+        <span class="monitor-resolution">Full</span>
+      </div>
+    </section>
+
+    <!-- TIMELINE PANEL -->
+    <section class="timeline-panel">
+      <div class="panel-tab-bar">
+        <div class="panel-tab active">Timeline: BLUEDOT_SHOWREEL</div>
+        <div class="timeline-tools">
+          <button class="tool-btn active" aria-label="Selection tool" title="Selection (V)">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 2l7 18 2-7 7-2L3 2z"/></svg>
+          </button>
+          <button class="tool-btn" aria-label="Razor tool" title="Razor (C)">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="6" cy="18" r="3"/><circle cx="18" cy="6" r="3"/><line x1="8.5" y1="15.5" x2="15.5" y2="8.5"/></svg>
+          </button>
+          <button class="tool-btn" aria-label="Hand tool" title="Hand (H)">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 11V6a2 2 0 0 0-4 0v5M14 10V4a2 2 0 0 0-4 0v8M10 10.5V6a2 2 0 0 0-4 0v8c0 4 3 8 7 8s7-4 7-8v-4"/></svg>
+          </button>
+          <button class="tool-btn" aria-label="Zoom tool" title="Zoom (Z)">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </button>
+          <div class="tool-divider"></div>
+          <span class="tool-info">10 CLIPS</span>
+          <button class="tool-btn" data-theme-toggle aria-label="Switch to light mode" title="Toggle theme">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="timeline-content">
+        <div class="track-headers">
+          <div class="ruler-spacer"></div>
+          <div class="track-header video-track">
+            <button class="track-toggle" aria-label="Toggle V1 visibility">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+            <span class="track-name">V1</span>
+          </div>
+          <div class="track-header video-track">
+            <button class="track-toggle" aria-label="Toggle V2 visibility">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+            <span class="track-name">V2</span>
+          </div>
+          <div class="track-header audio-track">
+            <button class="track-toggle" aria-label="Toggle A1 mute">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+            </button>
+            <span class="track-name">A1</span>
+          </div>
+          <div class="track-header audio-track">
+            <button class="track-toggle" aria-label="Toggle A2 mute">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+            </button>
+            <span class="track-name">A2</span>
+          </div>
+        </div>
+
+        <div class="timeline-scroll" id="timelineScroll">
+          <div class="timeline-track-area" id="trackArea">
+            <div class="timeline-ruler" id="ruler"></div>
+            <div class="tracks">
+              <div class="track" id="trackV1"></div>
+              <div class="track" id="trackV2"></div>
+              <div class="track" id="trackA1"></div>
+              <div class="track" id="trackA2"></div>
+            </div>
+            <div class="playhead" id="playhead">
+              <div class="playhead-handle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="projects.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>

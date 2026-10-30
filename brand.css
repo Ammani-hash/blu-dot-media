@@ -1,0 +1,48 @@
+/* ============================================
+   BLUE DOT MEDIA — Brand Hero
+   Minimal, centered "blank project" title card
+   that replaces the personal bio/photo intro
+   from the base timeline template.
+   ============================================ */
+
+.intro--brand {
+  align-items: center;
+}
+
+.intro-brand-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-3);
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.intro-brand-dot {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  box-shadow: 0 0 24px var(--color-accent-glow);
+  margin-bottom: var(--space-2);
+}
+
+.intro-brand-name {
+  font-size: clamp(2.75rem, 1.2rem + 8vw, 6.5rem);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 0.95;
+  color: var(--color-text);
+}
+
+.intro-brand-role {
+  font-family: var(--font-mono);
+  font-size: clamp(12px, 1vw, 14px);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}

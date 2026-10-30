@@ -1,0 +1,158 @@
+/* ============================================
+   BLUE DOT MEDIA — Project Detail Page
+   Reuses design tokens from style.css
+   ============================================ */
+
+.project-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  background: var(--color-bg);
+  font-family: var(--font-ui);
+  color: var(--color-text);
+}
+
+/* --- Header --- */
+.project-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  height: 48px;
+  flex-shrink: 0;
+  padding: 0 var(--space-4);
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  transition: color var(--transition-fast), background var(--transition-fast);
+}
+
+.back-link:hover {
+  color: var(--color-text);
+  background: var(--color-surface-3);
+}
+
+.project-header-title {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-text-faint);
+  letter-spacing: 0.02em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.project-header [data-theme-toggle] {
+  margin-left: auto;
+}
+
+/* --- Main Layout --- */
+.project-main {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: var(--space-4);
+}
+
+/* --- Video Frame --- */
+.project-video-frame {
+  flex: 1 1 62%;
+  min-width: 0;
+  aspect-ratio: 16 / 9;
+  background: var(--monitor-bg);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-detail-video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #000;
+}
+
+.project-video-empty {
+  font-family: var(--font-mono);
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  color: #3a3a3a;
+}
+
+/* --- Info Panel --- */
+.project-info {
+  flex: 1 1 34%;
+  min-width: 260px;
+  padding: var(--space-2) 0;
+}
+
+.project-title {
+  font-family: var(--font-ui);
+  font-size: clamp(1.75rem, 1.2rem + 2vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: var(--color-text);
+  margin-bottom: var(--space-2);
+}
+
+.project-meta {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+/* --- Not Found State --- */
+.project-not-found {
+  margin: auto;
+  font-family: var(--font-ui);
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+.project-not-found a {
+  color: var(--color-accent);
+}
+
+/* --- Responsive --- */
+@media (max-width: 800px) {
+  .project-main {
+    flex-direction: column;
+  }
+
+  .project-video-frame {
+    width: 100%;
+  }
+
+  .project-info {
+    min-width: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .project-header {
+    height: 44px;
+    padding: 0 var(--space-3);
+  }
+
+  .project-main {
+    padding: var(--space-3);
+  }
+}
